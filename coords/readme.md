@@ -7,3 +7,7 @@ Karel wants to place at all locations beepers equal to $100x+y$.
 * There are no beepers in the world
 * The world has no internal walls
 * The world is at most $35$ by height and width.
+
+
+# Target test
+Test row and column
