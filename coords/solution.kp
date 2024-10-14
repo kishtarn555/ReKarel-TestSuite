@@ -1,0 +1,37 @@
+usa rekarel.globales;
+iniciar-programa
+	define deja como
+	inicio
+		repetir fila-actual veces
+			deja-zumbador;
+		repetir columna-actual veces
+			repetir 100 veces
+				deja-zumbador;
+	fin;
+	define deja-fila como
+	inicio
+		deja;
+		mientras frente-libre hacer
+		inicio
+			avanza;
+			deja;
+		fin;
+		gira-izquierda;
+		gira-izquierda;
+		mientras frente-libre hacer
+			avanza;
+		gira-izquierda;
+		gira-izquierda;
+	fin;
+	inicia-ejecucion
+		deja-fila;
+		mientras derecha-libre hacer
+		inicio
+			repetir 3 veces gira-izquierda;
+			avanza;
+			gira-izquierda;
+			deja-fila;
+		fin;
+		apagate;
+	termina-ejecucion
+finalizar-programa

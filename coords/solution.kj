@@ -1,0 +1,42 @@
+import rekarel.globals;
+class program {
+	define deja () {
+		iterate (currentRow) {
+			putbeeper();
+		}
+		iterate (currentColumn) {
+			iterate (100) {
+				putbeeper();
+			}
+		}
+	}
+
+	define deja-fila () {
+		deja ();
+		while (frontIsClear) {
+			move();
+			deja ();
+		}
+		turnleft();
+		turnleft();
+		while (frontIsClear) {
+			move();
+		}
+		turnleft();
+		turnleft();
+	}
+
+	program() {
+		deja-fila ();
+		while (rightIsClear) {
+			iterate (3) {
+				turnleft();
+			}
+			move();
+			turnleft();
+			deja-fila ();
+		}
+		turnoff();
+	}   
+
+}
