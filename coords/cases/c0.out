@@ -1,0 +1,14 @@
+<resultados>
+	<mundos>
+		<mundo nombre="mundo_0">
+			<linea fila="5" compresionDeCeros="true">(1) 105 205 305 405 505 </linea>
+			<linea fila="4" compresionDeCeros="true">(1) 104 204 304 404 504 </linea>
+			<linea fila="3" compresionDeCeros="true">(1) 103 203 303 403 503 </linea>
+			<linea fila="2" compresionDeCeros="true">(1) 102 202 302 402 502 </linea>
+			<linea fila="1" compresionDeCeros="true">(1) 101 201 301 401 501 </linea>
+		</mundo>
+	</mundos>
+	<programas>
+		<programa nombre="p1" resultadoEjecucion="FIN PROGRAMA"/>
+	</programas>
+</resultados>

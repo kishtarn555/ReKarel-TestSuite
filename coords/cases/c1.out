@@ -1,0 +1,30 @@
+<resultados>
+	<mundos>
+		<mundo nombre="mundo_0">
+			<linea fila="21" compresionDeCeros="true">(1) 121 221 321 421 521 621 721 821 921 1021 1121 1221 1321 1421 1521 </linea>
+			<linea fila="20" compresionDeCeros="true">(1) 120 220 320 420 520 620 720 820 920 1020 1120 1220 1320 1420 1520 </linea>
+			<linea fila="19" compresionDeCeros="true">(1) 119 219 319 419 519 619 719 819 919 1019 1119 1219 1319 1419 1519 </linea>
+			<linea fila="18" compresionDeCeros="true">(1) 118 218 318 418 518 618 718 818 918 1018 1118 1218 1318 1418 1518 </linea>
+			<linea fila="17" compresionDeCeros="true">(1) 117 217 317 417 517 617 717 817 917 1017 1117 1217 1317 1417 1517 </linea>
+			<linea fila="16" compresionDeCeros="true">(1) 116 216 316 416 516 616 716 816 916 1016 1116 1216 1316 1416 1516 </linea>
+			<linea fila="15" compresionDeCeros="true">(1) 115 215 315 415 515 615 715 815 915 1015 1115 1215 1315 1415 1515 </linea>
+			<linea fila="14" compresionDeCeros="true">(1) 114 214 314 414 514 614 714 814 914 1014 1114 1214 1314 1414 1514 </linea>
+			<linea fila="13" compresionDeCeros="true">(1) 113 213 313 413 513 613 713 813 913 1013 1113 1213 1313 1413 1513 </linea>
+			<linea fila="12" compresionDeCeros="true">(1) 112 212 312 412 512 612 712 812 912 1012 1112 1212 1312 1412 1512 </linea>
+			<linea fila="11" compresionDeCeros="true">(1) 111 211 311 411 511 611 711 811 911 1011 1111 1211 1311 1411 1511 </linea>
+			<linea fila="10" compresionDeCeros="true">(1) 110 210 310 410 510 610 710 810 910 1010 1110 1210 1310 1410 1510 </linea>
+			<linea fila="9" compresionDeCeros="true">(1) 109 209 309 409 509 609 709 809 909 1009 1109 1209 1309 1409 1509 </linea>
+			<linea fila="8" compresionDeCeros="true">(1) 108 208 308 408 508 608 708 808 908 1008 1108 1208 1308 1408 1508 </linea>
+			<linea fila="7" compresionDeCeros="true">(1) 107 207 307 407 507 607 707 807 907 1007 1107 1207 1307 1407 1507 </linea>
+			<linea fila="6" compresionDeCeros="true">(1) 106 206 306 406 506 606 706 806 906 1006 1106 1206 1306 1406 1506 </linea>
+			<linea fila="5" compresionDeCeros="true">(1) 105 205 305 405 505 605 705 805 905 1005 1105 1205 1305 1405 1505 </linea>
+			<linea fila="4" compresionDeCeros="true">(1) 104 204 304 404 504 604 704 804 904 1004 1104 1204 1304 1404 1504 </linea>
+			<linea fila="3" compresionDeCeros="true">(1) 103 203 303 403 503 603 703 803 903 1003 1103 1203 1303 1403 1503 </linea>
+			<linea fila="2" compresionDeCeros="true">(1) 102 202 302 402 502 602 702 802 902 1002 1102 1202 1302 1402 1502 </linea>
+			<linea fila="1" compresionDeCeros="true">(1) 101 201 301 401 501 601 701 801 901 1001 1101 1201 1301 1401 1501 </linea>
+		</mundo>
+	</mundos>
+	<programas>
+		<programa nombre="p1" resultadoEjecucion="FIN PROGRAMA"/>
+	</programas>
+</resultados>
