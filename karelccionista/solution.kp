@@ -1,0 +1,124 @@
+iniciar-programa
+	define VolteeseJoven (n) como
+	inicio
+		repetir n veces
+		inicio
+			gira-izquierda;
+		fin;
+	fin;
+
+	define TodoDerechoJoven como
+	inicio
+		mientras frente-libre hacer
+		inicio
+			avanza;
+		fin;
+	fin;
+
+	define EncuentreUnBeeperJoven como
+	inicio
+		mientras no-junto-a-zumbador y frente-libre hacer
+		inicio
+			avanza;
+		fin;
+	fin;
+
+	define RegreseseJoven como
+	inicio
+		VolteeseJoven(2);
+		TodoDerechoJoven;
+	fin;
+
+	define OrdeneloJoven como
+	inicio
+		si junto-a-zumbador entonces
+		inicio
+			coge-zumbador;
+			OrdeneloJoven;
+			si orientado-al-este entonces
+			inicio
+				avanza;
+			fin
+			sino
+			inicio
+				VolteeseJoven(3);
+			fin;
+		fin
+		sino
+		inicio
+			RegreseseJoven;
+			VolteeseJoven(3);
+			avanza;
+		fin;
+	fin;
+
+	define AhoritaNoJoven como
+	inicio
+		mientras junto-a-zumbador y frente-libre hacer
+		inicio
+			avanza;
+		fin;
+		si frente-libre entonces
+		inicio
+			EncuentreUnBeeperJoven;
+			si junto-a-zumbador entonces
+			inicio
+				RegreseseJoven;
+				gira-izquierda;
+				avanza;
+			fin
+			sino
+			inicio
+				RegreseseJoven;
+				gira-izquierda;
+				avanza;
+				VolteeseJoven(2);
+				apagate;
+			fin;
+		fin
+		sino
+		inicio
+			RegreseseJoven;
+			gira-izquierda;
+			avanza;
+			VolteeseJoven(2);
+			apagate;
+		fin;
+	fin;
+
+	inicia-ejecucion
+		VolteeseJoven(3);
+		mientras frente-libre hacer
+		inicio
+			EncuentreUnBeeperJoven;
+			si no-junto-a-zumbador entonces
+			inicio
+				RegreseseJoven;
+				VolteeseJoven(3);
+				avanza;
+				VolteeseJoven(3);
+				EncuentreUnBeeperJoven;
+				AhoritaNoJoven;
+			fin
+			sino
+			inicio
+				OrdeneloJoven;
+				si junto-a-zumbador entonces
+				inicio
+					RegreseseJoven;
+					gira-izquierda;
+					avanza;
+				fin
+				sino
+				inicio
+					deja-zumbador;
+					RegreseseJoven;
+					gira-izquierda;
+					avanza;
+					gira-izquierda;
+				fin;
+			fin;
+		fin;
+		apagate;
+	termina-ejecucion   
+finalizar-programa

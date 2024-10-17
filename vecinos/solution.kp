@@ -1,0 +1,138 @@
+iniciar-programa
+	define turn (x) como
+	inicio
+		repetir x veces
+		inicio
+			gira-izquierda;
+		fin;
+	fin;
+
+	define north como
+	inicio
+		mientras no orientado-al-norte hacer
+		inicio
+			gira-izquierda;
+		fin;
+	fin;
+
+	define south como
+	inicio
+		mientras no orientado-al-sur hacer
+		inicio
+			gira-izquierda;
+		fin;
+	fin;
+
+	define east como
+	inicio
+		mientras no orientado-al-este hacer
+		inicio
+			gira-izquierda;
+		fin;
+	fin;
+
+	define west como
+	inicio
+		mientras no orientado-al-oeste hacer
+		inicio
+			gira-izquierda;
+		fin;
+	fin;
+
+	define recorre como
+	inicio
+		mientras no junto-a-zumbador y frente-libre hacer
+		inicio
+			avanza;
+		fin;
+		si frente-libre entonces
+		inicio
+			avanza;
+			mientras frente-libre hacer
+			inicio
+				si junto-a-zumbador entonces
+				inicio
+					deja-zumbador;
+				fin;
+				avanza;
+			fin;
+		fin;
+		turn(2);
+		mientras frente-libre hacer
+		inicio
+			avanza;
+		fin;
+		gira-izquierda;
+		si frente-libre entonces
+		inicio
+			avanza;
+			gira-izquierda;
+			recorre;
+		fin;
+	fin;
+
+	define cuenta como
+	inicio
+		repetir 5 veces
+		inicio
+			si junto-a-zumbador entonces
+			inicio
+				coge-zumbador;
+			fin
+			sino
+			inicio
+				south;
+			fin;
+		fin;
+		si orientado-al-norte entonces
+		inicio
+			cuenta;
+			deja-zumbador;
+		fin
+		sino
+		inicio
+			north;
+			si frente-libre entonces
+			inicio
+				avanza;
+				cuenta;
+			fin
+			sino
+			inicio
+				south;
+				mientras frente-libre hacer
+				inicio
+					avanza;
+				fin;
+				east;
+				si frente-libre entonces
+				inicio
+					avanza;
+					north;
+					cuenta;
+				fin
+				sino
+				inicio
+					west;
+					mientras frente-libre hacer
+					inicio
+						avanza;
+					fin;
+				fin;
+			fin;
+		fin;
+	fin;
+
+	inicia-ejecucion
+		recorre;
+		west;
+		recorre;
+		south;
+		recorre;
+		east;
+		recorre;
+		north;
+		cuenta;
+		apagate;
+	termina-ejecucion   
+finalizar-programa
