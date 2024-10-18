@@ -1,0 +1,10 @@
+import rekarel.globals;
+class program {
+	program () {
+		while (nextToABeeper) {
+			pickbeeper();
+		}
+		pickbeeper();
+		turnoff();
+	}
+}
