@@ -1,1 +1,0 @@
-[["LINE",3,2],["WORLDWALLS"],["ORIENTATION"],["MASK"],["AND"],["NOT"],["JZ",9],["LINE",4,3],["WORLDWALLS"],["ORIENTATION"],["MASK"],["AND"],["NOT"],["EZ","WALL"],["FORWARD"],["JMP",-16],["LINE",6,2],["WORLDWALLS"],["ORIENTATION"],["MASK"],["AND"],["NOT"],["EZ","WALL"],["FORWARD"],["LINE",7,2],["HALT"],["LINE",9,0],["HALT"]]
