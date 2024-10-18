@@ -1,0 +1,11 @@
+import rekarel.globals;
+class program {
+	void func() {
+		turnleft();
+		func();
+	}
+	program () {
+		func();
+		turnoff();
+	}
+}
