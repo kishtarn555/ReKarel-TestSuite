@@ -1,0 +1,12 @@
+import rekarel.globals;
+class program {
+	program () {
+		iterate(4) {
+			move();
+			turnleft();
+			pickbeeper();
+			putbeeper();
+		}
+		turnoff();
+	}
+}
