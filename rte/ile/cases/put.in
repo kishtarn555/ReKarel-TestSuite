@@ -1,6 +1,6 @@
 <ejecucion>
 	<condiciones instruccionesMaximasAEjecutar="10000" longitudStack="65000" memoriaStack="65000" llamadaMaxima="5">
-		<comando nombre="AVANZA" maximoNumeroDeEjecuciones="1"/>
+		<comando nombre="DEJA_ZUMBADOR" maximoNumeroDeEjecuciones="1"/>
 	</condiciones>
 	<mundos>
 		<mundo nombre="mundo_0" ancho="12" alto="12">
