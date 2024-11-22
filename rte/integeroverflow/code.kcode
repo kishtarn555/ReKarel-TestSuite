@@ -3,8 +3,6 @@ class program {
         func(succ(n));
     }
     program() {
-        func(999999999) {
-
-        }
+        func(999999999);
     }
 }
