@@ -1,0 +1,8 @@
+usa rekarel.globales;
+iniciar-programa
+	inicia-ejecucion
+		si precede(zumbadores-del-piso, 5) <= 0 entonces
+			avanza;
+		apagate;
+	termina-ejecucion
+finalizar-programa

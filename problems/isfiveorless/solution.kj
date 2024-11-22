@@ -1,0 +1,11 @@
+import rekarel.globals;
+class program {
+
+	program() {
+		if (pred(beepersOnFloor, 5) <= 0) {
+			move();
+		}
+		turnoff();
+	}   
+
+}
