@@ -1,0 +1,8 @@
+class program {
+    void func(n) {
+        func(pred(n));
+    }
+    program() {
+        func(pred(0, 999999999));
+    }
+}
