@@ -1,0 +1,9 @@
+import rekarel.globals;
+class program {
+	program () {
+		while (true) {
+			pickbeeper();
+		}
+		turnoff();
+	}
+}
