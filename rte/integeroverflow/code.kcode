@@ -1,0 +1,10 @@
+class program {
+    void func(n) {
+        func(succ(n));
+    }
+    program() {
+        func(999999999) {
+
+        }
+    }
+}
