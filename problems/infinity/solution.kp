@@ -1,0 +1,15 @@
+usa rekarel.globales;
+iniciar-programa
+
+	inicia-ejecucion
+		si es-infinito(zumbadores-en-la-mochila) entonces
+		inicio
+			avanza;
+		fin;
+		mientras es-infinito(zumbadores-del-piso) hacer
+		inicio
+			avanza;
+		fin;
+		apagate;
+	termina-ejecucion   
+finalizar-programa

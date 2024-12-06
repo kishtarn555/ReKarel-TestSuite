@@ -1,0 +1,10 @@
+import rekarel.globals;
+class program {
+	program () {
+		if (isinfinite(beepersInBeeperBag)) {
+			move();
+		}
+		while (isinfinite(beepersOnFloor)) move();
+		turnoff();
+	}
+}
